@@ -16,3 +16,38 @@ function draw() {
     velx = velx*-1;
      }
 }
+
+CON FUNCTION
+
+var x = 200;
+var velx = 10;
+
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(220);
+  mostrar();
+  moverX();
+  botarX();
+
+}
+
+function mostrar() {
+  ellipse(x, 200, 50, 50);
+}
+
+function moverX() {
+  x = x + velx;
+}
+
+function botarX() {
+  if (x < 25) {
+    velx = velx * -1;
+  }
+  if (x > 375) {
+    velx = velx * -1;
+  }
+
+}
